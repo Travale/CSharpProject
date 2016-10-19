@@ -1,13 +1,15 @@
-
 using System;
+public class PowerUp {
+    public int power = 10;
+    public float duration = 2;
 
-public class PowerUps {
-    int power = 10;
-    int duration = 5;
-    string name = "PowerUp";
+    public void RunPowerUp (){
+        Console.WriteLine("PowerUp Ran");
+    }
 
-    public void RunPowerUP (){
-        Console.WriteLine("using PowerUp");
+    public void RechargePowerUp (int _power) {
+        power += _power;
+        Console.WriteLine("Recharge PowerUp" + power);
     }
 
 }
