@@ -1,0 +1,11 @@
+On classes the video explains that variables are boxes holding machines.  The class holds the machines and boxes inside of itself
+When you create a fresh C# script the editor will put the word class in the first line after the "using" lines.  The class shares the 
+same title of the script it is in.  Classes should be dedicated to one task.  Classes can depend on  a constructor which  is a function that can be used to give
+variables to a class. Constructors can be made to set perameters to variables.  The name of the constructor must be the name of the class every time it is used.
+Create new instances by calling constructors and give them parameters.
+
+The scope in C# is the place in code that variables can be used in.  Code blocks are usually what defines the scopes reach.  variables given to classes always 
+have access modifiers written before them. It is written before a data type.  Values assigned to variables can be overridden in unity's inspector.  Variable's
+values in the inspector can again be overriden in a constructor made specific for that purpose.  Private variables are the default modifier for all varaibles.
+You can only call the public peices of script that you create. When calling a public variable the code will automatically try to auto complete with all the 
+public variables readily available.  
