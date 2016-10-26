@@ -7,8 +7,8 @@
 -debug:portable
 -nostdlib
 -nologo
-"C:\Users\10574957\Documents\1600\CSharpProject\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\10574957\Documents\1600\CSharpProject\bin\Debug\netcoreapp1.0\CSharpProject.dll"
+"C:\Users\10574957\Documents\1600\CSharpProject\CSharpProject\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\10574957\Documents\1600\CSharpProject\CSharpProject\bin\Debug\netcoreapp1.0\CSharpProject.dll"
 -r:"C:\Users\10574957\.nuget\packages\Microsoft.CSharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll"
 -r:"C:\Users\10574957\.nuget\packages\Microsoft.VisualBasic\10.0.1\ref\netstandard1.1\Microsoft.VisualBasic.dll"
 -r:"C:\Users\10574957\.nuget\packages\Microsoft.Win32.Primitives\4.0.1\ref\netstandard1.3\Microsoft.Win32.Primitives.dll"
@@ -82,5 +82,9 @@
 -r:"C:\Users\10574957\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\10574957\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\10574957\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
-"C:\Users\10574957\Documents\1600\CSharpProject\PowerUp.cs"
-"C:\Users\10574957\Documents\1600\CSharpProject\Program.cs"
+"C:\Users\10574957\Documents\1600\CSharpProject\CSharpProject\Game.cs"
+"C:\Users\10574957\Documents\1600\CSharpProject\CSharpProject\PowerUp.cs"
+"C:\Users\10574957\Documents\1600\CSharpProject\CSharpProject\Program.cs"
+"C:\Users\10574957\Documents\1600\CSharpProject\CSharpProject\varandfun.cs"
+"C:\Users\10574957\Documents\1600\CSharpProject\CSharpProject\GameScripts\PowerUps\PowerUpBase.cs"
+"C:\Users\10574957\Documents\1600\CSharpProject\CSharpProject\GameScripts\Weapons\WeaponBase.cs"
