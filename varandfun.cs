@@ -2,16 +2,15 @@ using System;
 
 public class NewVariables {
 
-    int newInt = 10
+    int newInt = 10;
 
     void First(){
         newInt = AddByThree(newInt);
-        Debug.log (newInt);
     }
     int AddByThree(int thisNumber){
         int ret;
 
-        ret = thisNumber + 3
+        ret = thisNumber + 3;
 
         return ret;
     }
