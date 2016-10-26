@@ -8,4 +8,4 @@ The scope in C# is the place in code that variables can be used in.  Code blocks
 have access modifiers written before them. It is written before a data type.  Values assigned to variables can be overridden in unity's inspector.  Variable's
 values in the inspector can again be overriden in a constructor made specific for that purpose.  Private variables are the default modifier for all varaibles.
 You can only call the public peices of script that you create. When calling a public variable the code will automatically try to auto complete with all the 
-public variables readily available. Test 
+public variables readily available. 
