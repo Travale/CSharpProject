@@ -1,20 +1,22 @@
+<<<<<<< HEAD
 ﻿    using System;
 
     public class Program
     {
+=======
+using System;
+>>>>>>> 80825164333b9a71bdcb7eb268370d3fe891e526
 
-        public static PowerUp Health = new PowerUp();
-        
-        public static PowerUp Ammo = new PowerUp();
-        public static void Main(string[] args)
-        {
-            Health = new PowerUp();
-            Health.duration = 10;
-            Health.RunPowerUp();
-            Console.WriteLine(Health.duration);
+public class Program
+{
 
-            Health.RechargePowerUp(20);
-            Ammo.RechargePowerUp(300);
-        }
+    public static Game myGame = new Game();
+
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Please type in your name");
+        myGame.name = Console.ReadLine();
+        Console.WriteLine("Your Player Name is" + myGame.name);
+        myGame.Start();
     }
-
+}
