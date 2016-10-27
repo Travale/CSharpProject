@@ -1,0 +1,13 @@
+Coding syntax is the structure of the language.  The dot or "." operator must be known to read and write code just 
+as many other operators are needed.  A dot is put between commands and is used execute heirarchy among them.  The dot 
+command allows us to seperate and access peices of a combined item in Unity.  Next the semicolon is used to terminate
+statements.  It is also important to indent code properly.  Make sure each new curly brace lines up with the code block
+it corresponds to.  Last, single line comments can be written after // and multiple line comments can be written with
+/* */.  
+
+Scripts are made of one or more classes in Unity.  The declarations you make are hidden.  This means that what you write
+in to the script will automatically be in the class.  Choose the type of variable you want then name it.  After this you
+can give the variable a default value.  Differently in javascript you type the word var before the variable name.  This is
+followed by a colon then the variable type = to a value.  The code "#pragma strict" at the top of the page requires you
+to select a type. In C# functions have a parameter list following the name.  The default access modifiers for C# is private while
+javascript is public.   
