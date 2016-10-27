@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-﻿    using System;
-
-    public class Program
-    {
-=======
 using System;
->>>>>>> 80825164333b9a71bdcb7eb268370d3fe891e526
+
 
 public class Program
 {
