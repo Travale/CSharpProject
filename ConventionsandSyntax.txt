@@ -10,4 +10,4 @@ in to the script will automatically be in the class.  Choose the type of variabl
 can give the variable a default value.  Differently in javascript you type the word var before the variable name.  This is
 followed by a colon then the variable type = to a value.  The code "#pragma strict" at the top of the page requires you
 to select a type. In C# functions have a parameter list following the name.  The default access modifiers for C# is private while
-javascript is public.   
+javascript is public.   a
