@@ -1,6 +1,8 @@
 using System;
 public class Game {
 
+    public static bool canPlay = true;
+
     public Game () {
         Health.power = 100;
         Health.message = "You are getting stronger.";
@@ -13,16 +15,18 @@ public class Game {
         Console.WriteLine("Please type in your name");
         name = Console.ReadLine();
         Console.WriteLine("Your Player Name is" + name);
-        while(Program.canPlay) {
+        Cave.Enter();
+        while(Game.canPlay) {
+            System.Threading.Thread.Sleep(2000);
             Walk();
         }
-        Console.WriteLine("You Died");
+        Console.WriteLine("You Died"); 
        
     }
 
     private void Walk (){
         Random randomNum = new Random();
-        Cave.Enter();
+        
         Cave.Encounter(randomNum.Next(0, Cave.objects.Length));
     }
     //Game Levels
