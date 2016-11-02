@@ -31,7 +31,7 @@ public class Game {
         Cave.Encounter(randomNum.Next(0, Cave.objects.Length));
     }
 
-    public satic void GameTimer () {
+    public static void GameTimer () {
         System.Threading.Thread.Sleep(2000);
     }
     //Game Levels
