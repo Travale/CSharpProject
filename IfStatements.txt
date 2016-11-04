@@ -1,0 +1,6 @@
+Several times while coding you will have to make your code make a decision based off a condition.  In this case we 
+will make an if else statment.  A good example of an if statement would be an if else statement based on the heat
+of coffee.  If the coffee temperature is higher than the hot limit then we can alert: "The coffee is too hot".
+We can the use the else if statement to compare the temperature to the minimum value.  If the value goes below the minimum
+we can alert: "The coffee is too cold.  Last we can put a final else statement if the coffee is neither too hot or
+cold.  This will activate the string "The coffee is just right".    
