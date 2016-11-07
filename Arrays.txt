@@ -1,0 +1,7 @@
+Arrays are tools used to store data of the same type together.  Declare an array like you are declaring a variable
+but after the variable type put [] brackets.  Array lengths are specified with a word like "new" followed by the type
+of the array and the amount of elements in [] brackets.  Access and initialize the elements of an array by using the
+name of the array followed by [] brackets with the index of the element inside.  You can initialize an array at the 
+same time as you declare it.  Specify a tag in the array to add all items associated with that tag to the array.  use
+a for loop to run through your array.  Set in the parameters int i = 0 then i < array.Length and increment i with ++.  
+The array name can be whatever you want.   
