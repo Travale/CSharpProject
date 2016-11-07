@@ -1,6 +1,8 @@
 using System;
 public class LevelBase {
 
+    public WeaponBase M16 = new WeaponBase();
+
     public string StartMessage;
     public bool entranceOpen = true;
     
@@ -27,8 +29,11 @@ public class LevelBase {
                     Game.UnderWater.Encounter(randomNum.Next(0, Game.UnderWater.objects.Length));
                 break;
                 case 3:
-                    //Lava Kills us and ends the Game
+                    //Danger kills us and ends the Game
                     Console.WriteLine("You've walked into" + objects[i]);
+                    if(objects[i] == "Shark") {
+                        M16.SemiAuto();
+                    }
                     Game.canPlay = false;
                 break;
                 default:
