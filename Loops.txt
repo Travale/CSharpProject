@@ -1,0 +1,6 @@
+Loops are tools used to repeat code.  The while loop starts with the word while.  Next to the while the conditional 
+is put in parentheses.  If the conditional is true the while loop will keep going.  Do while loops differ as they test
+a condition at the end of the body.  A simi colon is put after the conditional in a do while loop.  For loops use
+a different syntax than the while loop.  For a for loop the word for is used followed by three different conditionals.
+First declare the int then set the int as a conditional then increment or decrement the int.  The for each loop is
+good for looping through arrays.  In the conditional the type of variable is typed.  
