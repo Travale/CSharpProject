@@ -26,27 +26,48 @@ public class Game {
        
     }
 
-    public string gameState;
+   
 
     private void Play (){
-       
-        Console.WriteLine("Play commands: play, end, help");
-        gameState = Console.ReadLine();
+        Console.WriteLine("Play commands: Play, End, Help");
+
+        switch (GameStateMachine.currentGameState)
+        {
+            case GameStateMachine.GameStates.End:
+                Console.WriteLine("GameOver");
+                Environment.Exit(0);
+                break;
+            
+            case GameStateMachine.GameStates.Help:
+                Console.WriteLine("What do you need help for.  If you can't play this game, you have issues.");
+                Play();
+            break;
+
+            case GameStateMachine.GameStates.Play:
+
+            break;
+
+            default:
+                Console.WriteLine("This is not  valid option");
+                Play();
+            break;
+        }
+        // gameState = Console.ReadLine();
         
-        if(gameState == "end") {
-            Console.WriteLine("Game Over");
-            Environment.Exit(0);
-        }
+        // if(gameState == "end") {
+        //     Console.WriteLine("Game Over");
+        //     Environment.Exit(0);
+        // }
 
-        if(gameState == "help"){
-            Console.WriteLine("What do you need help for.  If you can't play this game, you have issues.");
-            Play();
-        }
+        // if(gameState == "help"){
+        //     Console.WriteLine("What do you need help for.  If you can't play this game, you have issues.");
+        //     Play();
+        // }
 
-        if(gameState != "help" && gameState != "play" && gameState != "end") {
-            Console.WriteLine(gameState + "This is not  valid option");
-            Play();
-        }
+        // if(gameState != "help" && gameState != "play" && gameState != "end") {
+        //     Console.WriteLine(gameState + "This is not  valid option");
+        //     Play();
+        // }
 
          Random randomNum = new Random();
          Cave.Encounter(randomNum.Next(0, Cave.objects.Length));
