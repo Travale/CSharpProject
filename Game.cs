@@ -15,11 +15,12 @@ public class Game {
    
 
    
-    private string gameState;
+    private string gameState = "Start";
+    private GameStateMachine.GameStates toEnum;
     public void Play (){
        
 
-        switch (GameStateMachine.currentGameState)
+        switch (toEnum)
         {
             case GameStateMachine.GameStates.Start:
                 Console.WriteLine("Please type in your name");
@@ -27,9 +28,12 @@ public class Game {
                 Console.WriteLine("Your Player Name is" + name);
 
                 Console.WriteLine("Play commands: Play, End, Help");
+
                 gameState = Console.ReadLine();
-                Console.WriteLine(gameState);
-                
+
+                if(Enum.TryParse(gameState, out toEnum))
+                    Console.WriteLine(toEnum); 
+
                 Play();
                 
                 
@@ -37,7 +41,8 @@ public class Game {
 
             case GameStateMachine.GameStates.Died:
                 Console.WriteLine("You Died");
-                Console.WriteLine("Game Over");
+                GameStateMachine.currentGameState = GameStateMachine.GameStates.End;
+                Play();
                 
                 break;
 
@@ -60,8 +65,6 @@ public class Game {
                     GameTimer();
                     Play();
                 }
-                Console.WriteLine("You Died");
-                Console.WriteLine("Game Over");
 
             break;
 

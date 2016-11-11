@@ -7,6 +7,6 @@ public class Program
 
     public static void Main(string[] args)
     {
-        myGame.Start();
+        myGame.Play();
     }
 }
