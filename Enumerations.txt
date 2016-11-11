@@ -1,0 +1,6 @@
+Enumerations are a special data type that have a specific subset of possible values.  Make an enum either inside or
+outside of the class.  Start with the enum keyword followed by a name.  List pieces of the enumeration in {} squiggly
+brackets.  Close this with a semi colon. The pieces each have a value referring to them starting with 0 for the first, 1
+for the second and so on.  You can also determine a value for each constant.  For example Hen = 4, Duck = 9 and so on.
+Set an enum by writing the name then a dot then the enum value.    
+ 
