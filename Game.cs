@@ -12,27 +12,36 @@ public class Game {
     }
 
     //Runs at the start of the game
-    public void Start (){
-        Console.WriteLine("Please type in your name");
-        name = Console.ReadLine();
-        Console.WriteLine("Your Player Name is" + name);
-        Cave.Enter();
-        while(Game.canPlay) {
-            GameTimer();
-            Play();
-        }
-        Console.WriteLine("You Died"); 
-        Console.WriteLine("Game Over");
-       
-    }
-
    
 
-    private void Play (){
-        Console.WriteLine("Play commands: Play, End, Help");
+   
+    private string gameState;
+    public void Play (){
+       
 
         switch (GameStateMachine.currentGameState)
         {
+            case GameStateMachine.GameStates.Start:
+                Console.WriteLine("Please type in your name");
+                name = Console.ReadLine();
+                Console.WriteLine("Your Player Name is" + name);
+
+                Console.WriteLine("Play commands: Play, End, Help");
+                gameState = Console.ReadLine();
+                Console.WriteLine(gameState);
+                
+                Play();
+                
+                
+                break;
+
+            case GameStateMachine.GameStates.Died:
+                Console.WriteLine("You Died");
+                Console.WriteLine("Game Over");
+                
+                break;
+
+
             case GameStateMachine.GameStates.End:
                 Console.WriteLine("GameOver");
                 Environment.Exit(0);
@@ -44,6 +53,15 @@ public class Game {
             break;
 
             case GameStateMachine.GameStates.Play:
+                
+                Cave.Enter();
+                while (Game.canPlay)
+                {
+                    GameTimer();
+                    Play();
+                }
+                Console.WriteLine("You Died");
+                Console.WriteLine("Game Over");
 
             break;
 
