@@ -1,0 +1,6 @@
+When making multiple decisions in code you can either use an if else statement or a switch statement.  When you want to compare
+a single variable to  a series of constants, use a switch.  If you want to make a character answer based on their 
+intelligence then use a switch to hold all of the greetings. Store the number of intelligence in a variable.  Create a function
+to hold the greetings.  The switch statement starts with the word switch and inside of it is put the word case with the 
+number of intelligence next to it followed by a : sign. End a case with the command "break".  At the end of the switch
+type the "default" command.  This will run when every other case has failed.   
